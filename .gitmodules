@@ -1,0 +1,12 @@
+[submodule "vagrant-env/puppet/modules/nodejs"]
+	path = vagrant-env/puppet/modules/nodejs
+	url = git@github.com:GianlucaCandiotti/puppet-nodejs.git
+[submodule "vagrant-env/puppet/modules/stdlib"]
+	path = vagrant-env/puppet/modules/stdlib
+	url = git@github.com:GianlucaCandiotti/puppetlabs-stdlib.git
+[submodule "vagrant-env/puppet/modules/wget"]
+	path = vagrant-env/puppet/modules/wget
+	url = git@github.com:GianlucaCandiotti/puppet-wget.git
+[submodule "vagrant-env/puppet/modules/apt"]
+	path = vagrant-env/puppet/modules/apt
+	url = git@github.com:GianlucaCandiotti/puppetlabs-apt.git
