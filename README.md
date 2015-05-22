@@ -4,6 +4,15 @@ This repository contains the main structure to run a NodeJS environment provisio
 
 ## Setting up the environment
 
+Your file structure should end up looking like this one:
+
+- vagrant-env
+	- .vagrant
+	- puppet
+	- Vagrantfile
+- app
+	- **Your project files go here**
+
 In order to set up the environment:
 
 1. Download vagrant from this [link](http://www.vagrantup.com/downloads.html).
@@ -12,7 +21,7 @@ In order to set up the environment:
 
 3. Once both are installed clone this repository to your machine with:
 
-		git clone --recursive git@github.com:GianlucaCandiotti/react.eg.git
+		git clone --recursive git@github.com:GianlucaCandiotti/node-env.git repository-name
 
 4. If you are working on a Windows environment, run this command in a command prompt as administrator in order to allow all kinds of symbolic links to be created on the computer ( Omit this step if you have done this before and skip to step 6 ) :
 
@@ -20,13 +29,13 @@ In order to set up the environment:
 
 5. Reboot your computer to apply changes.
 
-6. Open a terminal and run the command **vagrant up** from the folder *react.eg/vagrant-env/*.
+6. Open a terminal and run the command **vagrant up** from the folder *repository-name/vagrant-env/*.
 
 7. Once the virtual machine's been provisioned, run **vagrant ssh** to connect to the terminal.
 
-8. The sync folder inside the VM is */vagrant* and inside the host machine it looks for *react.eg/app*.
+8. The sync folder inside the VM is */vagrant* and inside the host machine it looks for *repository-name/app*.
 
-9. Clone the repository you want to run into the ./app folder or create your own files there.
+9. Don't forget that the Vagrantfile will look for the *./app* folder as the sync folder. If you already have some files, put them in an *./app* folder so that your structure looks like the one described above. If you are starting from scratch or cloning a repository just create the *./app* folder and put your files in there.
 
 - - -
 
